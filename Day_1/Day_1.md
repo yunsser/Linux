@@ -176,11 +176,11 @@ with open('members.txt', 'r') as fin:
 # permission denied : 오류는 권한부여 오류
 ```
 
- - >, >> : Redirection
+ - [ >, >> ] : Redirection
 
- - > file
+ - [ > ] : file
 
- - | : 다른프로그램의 표준 출력 입력스트림으로 변환
+ - [ | ] : 다른프로그램의 표준 출력 입력스트림으로 변환
 
 test1.py → ‘Hello World’ : test1.py가 표준출력
 
