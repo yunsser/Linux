@@ -48,9 +48,9 @@ shutdown now
 
 pwd : Present Working Directory
 
-![Untitled](Day_1%20b4095bb5de0c42dd89a97e2bc7580f7f/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/102286605/168568827-b49d3d80-0a4c-4f87-8c5d-90bbe7e611b9.png)
 
-![Untitled](Day_1%20b4095bb5de0c42dd89a97e2bc7580f7f/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/102286605/168568839-525bd526-550f-4b2a-9ad3-c3e6900a606e.png)
 
 - whoami : 유저확인
 - shutdown now : 주위 필요 중요함
@@ -82,7 +82,8 @@ pwd : Present Working Directory
     Contol + D
     
 
-![Untitled](Day_1%20b4095bb5de0c42dd89a97e2bc7580f7f/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/102286605/168568895-d1536fb4-3003-43fe-b9f7-5500555a9473.png)
+
 
 cat > test.txt : 키보드 입력 데이터가 sample 파일에 저장
 
@@ -97,7 +98,8 @@ nano
 - 에디터
     - Control + o 저장
 
-![Untitled](Day_1%20b4095bb5de0c42dd89a97e2bc7580f7f/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/102286605/168568909-c6843545-937e-4101-a09e-9f1ec2ce02b1.png)
+
 
 cat >> test.txt 
 
@@ -107,7 +109,8 @@ cat test.txt > sample.txt
 
 - 내용 새로운 파일에 복사
 
-![Untitled](Day_1%20b4095bb5de0c42dd89a97e2bc7580f7f/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/102286605/168568926-90e923d2-f6ff-4a3d-bcec-05cf8fb75e23.png)
+
 
 test.txt의 내용을 sample.txt 아래에 추가하려면?
 
@@ -152,32 +155,7 @@ test.txt의 내용을 sample.txt 아래에 추가하려면?
 - 경로없이 파이썬 실행
     1. nano hello.py (파일생성)
     2. #! /usr/bin/python3 (파일 안에 맨 윗줄에 적어주기
-    
 
-```python
--- 환경변수
-nano .profile
-export PATH=/usr/bin/python3:$PATH
-
-source .profile
-python3
-
--- 파이썬 파일 생성
-mkdir pythontest
-cd pythontest
-nano hello.py
-
--- 파이썬 실행
-python3 hello.py
-
--- 경로 없이 파이썬 실행
-nano hello.py
-#! /usr/bin/python3
-
-ls -al, ls -l hello.py
-chmod 764 hello.py  -> 권한부여
-./hello.py
-```
 
 ```python
 -- txt -> py
@@ -214,7 +192,7 @@ stdin.py : 키보드로부터 입력하여 문자의 갯수를 세어서 화면�
 
 ./stdout.py | ./stdin.py → 출력되는 문자의 갯수를 화면에 표시
 
-![Untitled](Day_1%20b4095bb5de0c42dd89a97e2bc7580f7f/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/102286605/168568953-1529e0a2-a53d-4fd6-8f91-89b4fd19a717.png)
 
 텍스트 붙여넣기 : Shift + Insert 또는 Ctrl + shift + V
 텍스트 복사 :  Ctrl + Insert 또는 Ctrl + shift + C
