@@ -17,7 +17,7 @@ a에서는 1~5까지 5회 표준출력한다
 
 b에서는 a의 출력값을 모두 받아서 합산한 결과를 화면에 표시
 
-![Untitled](Day_02%20df90d2be834c488e94a852ac2942e83f/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/102286605/168778870-c1ab369a-d743-482b-987e-36742074b0be.png)
 
 Hadoop
 
@@ -47,7 +47,8 @@ sudo apt install openssh-server openssh-client -y
 
 ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 
-![Untitled](Day_02%20df90d2be834c488e94a852ac2942e83f/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/102286605/168778929-94e1fae6-2fa2-4a95-bd34-88bf3192495b.png)
+
 
 물결 뒤 내용은 나의 디렉토리
 
@@ -115,7 +116,8 @@ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
     </property>
     ```
     
-    ![Untitled](Day_02%20df90d2be834c488e94a852ac2942e83f/Untitled%202.png)
+    ![Untitled 2](https://user-images.githubusercontent.com/102286605/168779009-7fd08f9e-a031-461d-a6b3-a05888f4c354.png)
+
     
 9. mkdir tmpdata
 10. nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml
@@ -195,14 +197,11 @@ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
 9. jps (자바가 돌아가는지 체크)
 10. stop-all.sh
     1. 실행하고 싶으면 start-dfs.sh
-
-![Untitled](Day_02%20df90d2be834c488e94a852ac2942e83f/Untitled%203.png)
-
-![Untitled](Day_02%20df90d2be834c488e94a852ac2942e83f/Untitled%204.png)
-
-1. http://localhost:9870
-2. http://localhost:9864
-3. http://localhost:8088
+        ![Untitled 3](https://user-images.githubusercontent.com/102286605/168779040-89654b73-865a-43af-aec5-6e68ab5fee7b.png)
+        ![Untitled 4](https://user-images.githubusercontent.com/102286605/168779053-5c50d46f-3291-4969-a770-bd87bf0d5f2f.png)
+11. http://localhost:9870
+12. http://localhost:9864
+13. http://localhost:8088
 
 ---
 
@@ -234,8 +233,8 @@ MapReduce > Spark (In-Memory)
 1. start-all.sh
 2. jps
     1. 5개가 돌아가야함
-        
-        ![Untitled](Day_02%20df90d2be834c488e94a852ac2942e83f/Untitled%205.png)
+        ![Untitled 5](https://user-images.githubusercontent.com/102286605/168779087-7285881a-d04d-4720-8800-6acbef666947.png)
+
         
     2. 분산처리
         
@@ -259,13 +258,13 @@ MapReduce > Spark (In-Memory)
 7. hdfs dfs -ls /user/
 8. hdfs dfs -ls -R / 
     1. 반복해서 만들려면 -R ( Recursive) 을 붙여준다
+      ![Untitled 6](https://user-images.githubusercontent.com/102286605/168779165-6cea50a7-7108-4a8b-8913-c934cf1e1cc1.png)
 
-![Untitled](Day_02%20df90d2be834c488e94a852ac2942e83f/Untitled%206.png)
 
 1. hdfs dfs -copyFromLocal sample.txt /user/mydata/
     1. 분산환경으로 집어넣어준다 (분산파일에 있는 시스템)
     2. 복사해서 mydata로 넣어준다
 2. hdfs dfs -ls -R /
 3. hdfs dfs -cat /user/mydata/sample.txt
+    ![Untitled 7](https://user-images.githubusercontent.com/102286605/168779186-ca007b43-f3f5-416e-b95d-de76450545ef.png)
 
-![Untitled](Day_02%20df90d2be834c488e94a852ac2942e83f/Untitled%207.png)
