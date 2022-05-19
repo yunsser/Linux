@@ -23,3 +23,7 @@
  - pandas.DataFrame & CSV 파일 입출력
  - 로컬에서 생성된 DataFrame 객체를 dfs에 csv로 저장
  - 통계 함수(sum)
+
+#### Day_04 (20220519)
+ - MapReduce를 사용하여 분석
+ - 통계
