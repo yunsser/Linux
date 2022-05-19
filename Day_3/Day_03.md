@@ -37,9 +37,10 @@ Client Server : 독립적으로 실행
 7. hdfs dfs -copyFromLocal names.dat /user/mydata/
 8. hdfs dfs  -cat /user/mydata/names.dat
     1. 분산환경
-    
-    ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled.png)
-    
+        
+  	  ![Untitled](https://user-images.githubusercontent.com/102286605/169008561-18d03b94-4c76-486c-933e-ccad8d227a07.png)
+
+
 
 ### 기능추가
 
@@ -52,8 +53,8 @@ Client Server : 독립적으로 실행
 5. hdfs dfs -cat /user/mydata/names.dat
     1. 샘플사진
         
-        ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%201.png)
-        
+        ![Untitled 1](https://user-images.githubusercontent.com/102286605/169008635-5e1d5055-b41a-4ac3-8dbd-c402e2a2d6ba.png)
+
 
 ### /user/mydata 디렉토리의 권한 설정을 rwxrwxr-x 으로 변경
 
@@ -63,7 +64,8 @@ Client Server : 독립적으로 실행
 3. hdfs dfs -ls /user/mydata
 4. hdfs dfs -ls /user
 
-![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%202.png)
+	![Untitled 2](https://user-images.githubusercontent.com/102286605/169008673-c04e1b7d-fc3c-4f0e-af8a-f5ba65379815.png)
+
 
 ### 하둡 : 분산환경에 있는 파일을 로컬로 가져다놓고 분석가능
 
@@ -74,14 +76,16 @@ Client Server : 독립적으로 실행
 - cp를 이용한 dfs 내에서의 파일복사
     - hdfs dfs -cp /user/mydata/names.dat /user/
         
-        ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%203.png)
+	![Untitled 3](https://user-images.githubusercontent.com/102286605/169008706-2d347df5-a91e-43eb-a6fb-f2dc8a41b19e.png)
+
         
 - -copyFromLocal
     - 복사, a→b
     - hdfs dfs -copyFromLocal 파일명 /user/디렉토리명
     - 예시
         
-        ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%204.png)
+	![Untitled 4](https://user-images.githubusercontent.com/102286605/169008736-8f410f66-3fef-4910-942b-cfc8f442ce99.png)
+
         
 - -copyToLocal
     - 복사, b→a
@@ -91,7 +95,8 @@ Client Server : 독립적으로 실행
     - dfs의 파일 삭제
     - 예시사진
         
-        ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%205.png)
+	![Untitled 5](https://user-images.githubusercontent.com/102286605/169008770-a85b8d29-3eb3-4b25-8660-ead4a41a2ca7.png)
+
         
 - -get dfsfile localfile
     - dfs에 있는 sample.txt를 로컬로 복사
@@ -119,7 +124,8 @@ Client Server : 독립적으로 실행
 3. hdfs dfs -cat /user/mydata/sample.txt
     1. 샘플사진
     
-    ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%206.png)
+    ![Untitled 6](https://user-images.githubusercontent.com/102286605/169008803-f888aa92-dbdb-4cbb-9652-997cf1521bcc.png)
+
     
 
 ### -Test 명령어 사용법
@@ -254,7 +260,8 @@ pypi.org
         ```
         
 
-![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%207.png)
+		![Untitled 7](https://user-images.githubusercontent.com/102286605/169008860-82be47de-a85b-46bf-a891-b293e4b79b32.png)
+
 
 1. nano hdfs_client.py
 2. python3 hdfs_client.py
@@ -330,7 +337,8 @@ print(df)
     print(df2)
     ```
     
-    ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%208.png)
+    ![Untitled 8](https://user-images.githubusercontent.com/102286605/169008899-54e8d47b-f811-4b98-877a-fb9e763b3cc8.png)
+
     
 7. nano data_frame_demo.py
 8. 코드
@@ -344,7 +352,9 @@ print(df)
     #index_col=0 : 맨 첫줄 0123 이 인덱스라는 걸 알려준다7.
     ```
     
-    ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%209.png)
+    ![Untitled 9](https://user-images.githubusercontent.com/102286605/169008952-60279a48-50fc-492d-a3f2-933a882ee9dc.png)
+
+    
     
 9. nano data_frame_demo.py
 10. 코드
@@ -360,7 +370,8 @@ print(df)
         print(df2.describe())
         ```
         
-        ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%2010.png)
+		![Untitled 10](https://user-images.githubusercontent.com/102286605/169008979-9a46200e-7117-428f-9c46-d15c3ed8b72a.png)
+
         
 
 ### 로컬에서 생성된 DataFrame 객체를 dfs에 csv로 저장하기
@@ -399,7 +410,8 @@ with client_hdfs.write('/user/sample.csv',overwrite=True,encoding='utf-8') as wr
     print(df2.sum(axis=0))[
     ```
     
-    ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%2011.png)
+    ![Untitled 11](https://user-images.githubusercontent.com/102286605/169009006-7b861e46-4617-47a1-a0d3-dd0c4e9cf0cb.png)
+
     
 2. 예시 (2)
     
@@ -424,6 +436,7 @@ with client_hdfs.write('/user/sample.csv',overwrite=True,encoding='utf-8') as wr
             print('results of sum saved!')
     ```
     
-    ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%2012.png)
+    ![Untitled 13](https://user-images.githubusercontent.com/102286605/169009055-3b3cdb47-a125-418f-8248-142dffc3cdf0.png)
+
     
-    ![Untitled](Day_03%20a47ea37cb8524831b9a79b3f4799aa08/Untitled%2013.png)
+    ![Untitled 13](https://user-images.githubusercontent.com/102286605/169009115-515d24d3-9d86-4be8-aa29-068387d61a99.png)
