@@ -46,17 +46,20 @@ hadoop-streaming-xxx.jar
         
     2. 단어를 쪼개서 알려준다
         
-        ![Untitled](Day_04%2039791f9af1a5491aaa28b3800f11f2b3/Untitled.png)
+        ![Untitled](https://user-images.githubusercontent.com/102286605/169261695-c48c1eaa-6692-4380-a132-f0876de4cb88.png)
+
         
 5. cat putin.txt | ./Mapper.py
     1. 예시
         
-        ![Untitled](Day_04%2039791f9af1a5491aaa28b3800f11f2b3/Untitled%201.png)
+        ![Untitled 1](https://user-images.githubusercontent.com/102286605/169261725-e946040d-5d5e-4cf5-ac20-0235e5a36324.png)
+
         
 6. cat putin.txt | ./Mapper.py | sort -k 1
     1. sort 정렬
         
-        ![Untitled](Day_04%2039791f9af1a5491aaa28b3800f11f2b3/Untitled%202.png)
+        ![Untitled 2](https://user-images.githubusercontent.com/102286605/169261744-530269cd-b9c3-4c53-90b4-a5a2f2f56c46.png)
+
         
 7. reducer.py
     1. 카운터 되게
@@ -98,14 +101,17 @@ hadoop-streaming-xxx.jar
     1. sort -k 1,2 차이는 첫번째칸 두번째칸이라는 의미
     2. 정렬 (오름차순, 숫자가  적은거부터 큰 순으로 , 문자열로 정렬이라 10과 13로 1로 쳐진다)
         
-        ![Untitled](Day_04%2039791f9af1a5491aaa28b3800f11f2b3/Untitled%203.png)
+        ![Untitled 3](https://user-images.githubusercontent.com/102286605/169261814-70444643-3048-466d-8029-43a8fd166d58.png)
+
+        
         
     3. 정렬 (내림차순, -r 을 추가해준다)
         1. cat putin.txt | ./Mapper.py | sort -k 1 | ./Reducer.py | sort -r -k 2
     4. 정렬 (숫자정렬)
         1. cat putin.txt | ./Mapper.py | sort -k 1 | ./Reducer.py | sort -r -n -k 2
             
-            ![Untitled](Day_04%2039791f9af1a5491aaa28b3800f11f2b3/Untitled%204.png)
+            ![Untitled 4](https://user-images.githubusercontent.com/102286605/169261858-a8b2ac9a-56c3-43b1-91da-859fd6aa2f11.png)
+
             
     5. 옵션 종류
         1. sort [-옵션] [-o 저장될 파일명] 정렬할 파일명 [병합할 파일명]
@@ -139,9 +145,12 @@ hadoop-streaming-xxx.jar
     hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar -files Mapper.py,Reducer.py -input /user/hdoop/input/* -hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.2.jar -files Mapper.py,Reducer.py -input /user/hdoop/input/* -output /user/hdoop/output -mapper Mapper.py -reducer Reducer.pyoutput /user/hdoop/output -mapper Mapper.py -reducer Reducer.py
     ```
     
-    ![Untitled](Day_04%2039791f9af1a5491aaa28b3800f11f2b3/Untitled%205.png)
+    ![Untitled 5](https://user-images.githubusercontent.com/102286605/169261943-165117c3-6dad-4744-ad28-80f1c097ab4f.png)
+
+
     
-    ![Untitled](Day_04%2039791f9af1a5491aaa28b3800f11f2b3/Untitled%206.png)
+    ![Untitled 6](https://user-images.githubusercontent.com/102286605/169261923-d84b7b3e-90e9-4061-8714-bf4d31f0a0b3.png)
+
     
 5. hdfs dfs -ls -R /user/ouput
 6. hdfs dfs -cat /user/hdoop/output/part-00000
@@ -206,7 +215,8 @@ hadoop-streaming-xxx.jar
                         print('{}\t{}'.format(num, 1958+n-1))
         ```
         
-        ![Untitled](Day_04%2039791f9af1a5491aaa28b3800f11f2b3/Untitled%207.png)
+        ![Untitled 7](https://user-images.githubusercontent.com/102286605/169262027-117b0036-2a24-42d0-8e1e-36de7372bcd9.png)
+
         
 3.  AT_Reducer py
     1. 설명
@@ -252,7 +262,8 @@ hadoop-streaming-xxx.jar
         print(avg)
         ```
         
-        ![Untitled](Day_04%2039791f9af1a5491aaa28b3800f11f2b3/Untitled%208.png)
+        ![Untitled 8](https://user-images.githubusercontent.com/102286605/169262054-0991dba9-0f0c-4dbe-a86a-dcf7c8bef995.png)
+
         
 4. output/part-00000
     
