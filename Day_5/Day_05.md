@@ -11,8 +11,8 @@ Hadoop Eco-System
     - SELECT AVG (salary) FROM emp
     - 데이터는 csv에 저장, 테이블은 메타데이터로 존재
         
-        ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled.png)
-        
+        ![Untitled](https://user-images.githubusercontent.com/102286605/169500201-7ad391de-3d4a-4b84-ab61-002f8b9199bd.png)
+
     
     ### Hive 설치
     
@@ -20,7 +20,8 @@ Hadoop Eco-System
         1. `[apache-hive-3.1.2-bin.tar.gz](https://archive.apache.org/dist/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz)` 다운로드하기``
         2. wget https://archive.apache.org/dist/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
             
-            ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%201.png)
+            ![Untitled 1](https://user-images.githubusercontent.com/102286605/169500235-69be7c76-81e9-441e-9206-1f891c570a43.png)
+
             
     2. ls (파일 왔는지 확인)
         1. apache-hive-3.1.2-bin.tar.gz
@@ -43,14 +44,13 @@ Hadoop Eco-System
             df = pd.read_csv(reader,index_col=0)
         print( df )
         ```
-        
-        ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%202.png)
+
         
     2. 호스트 컴의 Anaconda Prompt 에서 pip install hdfs 명령으로 설치
     3. 실행
         
-        ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%203.png)
-        
+        ![Untitled 3](https://user-images.githubusercontent.com/102286605/169500268-d8355034-02f2-4336-9bcb-d69845f4735e.png)
+
     
     VM : Linux, hadoop, hdfs
     
@@ -104,7 +104,8 @@ Hadoop Eco-System
     1. 구아바 파일 위치찾기
 31. cp /home/hduser/hadoop/share/hadoop/common/lib/guava-27.0-jre.jar ./
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%204.png)
+    ![Untitled 4](https://user-images.githubusercontent.com/102286605/169500324-88d572f3-a33e-480b-be0f-832f366fac91.png)
+
     
 32. cd ../bin
 33. schematool -dbType derby -initSchema
@@ -115,14 +116,17 @@ Hadoop Eco-System
     2. 알트 w : 다음 찾기
     3. 빨간 글씨 부분 지워주고 for 과 transactional  사이에 공백 넣어주기
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%205.png)
+    ![Untitled 5](https://user-images.githubusercontent.com/102286605/169500356-d7d38eff-e709-4aba-a871-a20337a351bb.png)
+
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%206.png)
+    ![Untitled 6](https://user-images.githubusercontent.com/102286605/169500373-d6573d2e-455e-4a1b-9f93-62e05c32b3c0.png)
+
     
 36. schematool -dbType derby -initSchema
     1. 성공
         
-        ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%207.png)
+        ![Untitled 7](https://user-images.githubusercontent.com/102286605/169500408-9f6ff465-663f-474b-900f-f8e5a6d2deac.png)
+
         
 
 ### Hive 돌려보기
@@ -132,7 +136,8 @@ Hadoop Eco-System
     1. 코드 
 3. hive
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%208.png)
+    ![Untitled 8](https://user-images.githubusercontent.com/102286605/169500433-b620bd5a-0577-4b17-bf8e-0a98cf3fb6f2.png)
+
     
 4. /hive-3.1.2/bin에서 schematool -dbType derby -initSchema
 
@@ -144,12 +149,14 @@ Hadoop Eco-System
     1. s ; 사이 스페이스바 필수
 4. show tables ;
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%209.png)
+    ![Untitled 9](https://user-images.githubusercontent.com/102286605/169500459-84c24e89-42c9-4695-8b71-8e6b53063d29.png)
+
     
 5. create database userdb ;
 6. show databases ;
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%2010.png)
+    ![Untitled 10](https://user-images.githubusercontent.com/102286605/169500478-ca8fe73c-9f6f-4e00-b64f-9811a9b7b78d.png)
+
     
 7. use userdb;
 8. 코드
@@ -166,7 +173,8 @@ Hadoop Eco-System
     TBLPROPERTIES ('NO_AUTO_COMPACTION' = 'true');
     ```
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%2011.png)
+    ![Untitled 11](https://user-images.githubusercontent.com/102286605/169500508-f778b255-afd5-421f-812d-6dd55f58e84b.png)
+
     
 9. show tables;
 10. 로컬 시스템에 employee.csv 생성 
@@ -192,12 +200,14 @@ Hadoop Eco-System
     SELECT * FROM employee;
     ```
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%2012.png)
+    ![Untitled 12](https://user-images.githubusercontent.com/102286605/169500525-c9298496-2c73-4294-a3a4-c3ebc2fb8fe9.png)
+
     
 13. SELECT AVG(salary) FROM employee;
     1. 자바를 이용한 통계14. 
         
-        ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%2013.png)
+        ![Untitled 13](https://user-images.githubusercontent.com/102286605/169500533-f6067f66-a575-4e35-8c9d-e977a35b41b4.png)
+
         
 14. exit;
     1. Hive 종료
@@ -321,17 +331,19 @@ Python 접속
           con.close();
        }
     }
-    ```
+    ``` 
     
-2. 
+    ![Untitled 14](https://user-images.githubusercontent.com/102286605/169500629-9fde5dc3-f9b7-4eb0-abf7-415228bb719f.png)
+
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%2014.png)
+    ![Untitled 15](https://user-images.githubusercontent.com/102286605/169500640-d7f808c6-7295-4227-8827-49ace6b11318.png)
+
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%2015.png)
+    ![Untitled 16](https://user-images.githubusercontent.com/102286605/169500642-1079dc8a-b548-4639-8033-d1c66e6878a2.png)
+
     
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%2016.png)
-    
-    ![Untitled](Day_05%20bffee61cf24645e4a9bc2c1e9330eec1/Untitled%2017.png)
+    ![Untitled 17](https://user-images.githubusercontent.com/102286605/169500654-28d8f3f6-7ada-4fad-ab58-cdff21c49ce9.png)
+
     
 - hive를 연결하는 java 프로그램을 작성할 때 요구되는 라이브러리
 1. ~/hive-3.1.2/lib

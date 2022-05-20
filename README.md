@@ -27,3 +27,12 @@
 #### Day_04 (20220519)
  - MapReduce를 사용하여 분석
  - 통계
+
+#### Day_05 (20220520)
+ - Hive 설치
+ - 파이썬에 hdfs
+ - Hive 설치
+ - Hive 실행
+ - hiveserver2 설치
+ - hiveserver2 오류해결
+ - hiveserver2에 외부에서 접속 (이클립스)
