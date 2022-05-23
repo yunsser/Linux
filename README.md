@@ -36,3 +36,12 @@
  - hiveserver2 설치
  - hiveserver2 오류해결
  - hiveserver2에 외부에서 접속 (이클립스)
+
+#### Day_06 (20220523)
+ - Hive 연결하는법
+ - 환경변수 바꿔주기
+ - 파이썬 스파크 실행
+ - find spark 모듈설치
+ - 로컬에 있는 employee.csv에 헤더를 추가
+ - Windows 에 Spark설치, Jupyter notebook 사용
+
